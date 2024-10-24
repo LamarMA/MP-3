@@ -4,10 +4,26 @@ import { useEffect } from 'react';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
+import styled from 'styled-components';
 
 const dark = "#3f0d12";
 const light = "#CC8F96";
 const medium = "#6A2430";
+
+const Table = styled.table`
+  margin: auto;
+  justify-content: center;
+  border-collapse: collapse;
+  max-width: 100%;
+  th, td {
+    border: 0.5vw solid #38040E;
+    padding: 0.5vw
+  }
+
+  a{
+    color: #fff;
+  }
+`;
 
 export default function Education() {
   useEffect(() => {
@@ -31,7 +47,7 @@ export default function Education() {
           I'm pursuing a minor in English for my love of English Literature. </p>
 
         <h2> Important CS classes </h2>
-        <table>
+        <Table>
           <tr>
             <th>Course ID </th>
             <th>Course Name</th>
@@ -103,7 +119,7 @@ export default function Education() {
             <td><a href="https://www.bu.edu/academics/cas/courses/cas-cs-440/"> BU CAS CS440
             </a></td>
           </tr>
-        </table>
+        </Table>
 
       </Main>
       <Footer bg={dark} />
