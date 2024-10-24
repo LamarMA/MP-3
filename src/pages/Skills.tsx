@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
-import Image from '../components/Image';
 
 const dark = "#28190E";
 const light = "#796553";
