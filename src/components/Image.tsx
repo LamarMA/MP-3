@@ -2,8 +2,10 @@
 import styled from 'styled-components';
 
 const StyledImage = styled.img<{ bc: string }>`
-  max-width: 60%;
+  max-width: 50%;
   border: 5px solid ${({ bc }) => bc};
+  display: block;
+  margin: 0 auto;
 
   @media screen and (max-width: 720px) {
     max-width: 40%;

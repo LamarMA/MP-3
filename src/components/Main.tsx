@@ -15,35 +15,58 @@ const MainWrapper = styled.div`
   }
 `;
 
-const Sidebar = styled.nav<{ bg: string }>`
-  width: 30%;
+const Sidebar = styled.nav<{ btn: string, bg: string }>`
+  width: 25%;
   background-color: ${({ bg }) => bg};
-  padding: 1rem;
+  
+  a {
+    display: inline-block;
+    width: 20vh; /* fixed width for all buttons */
+    text-align: center;
+    background-color: ${({ btn }) => btn};
+    color: white;
+    font-weight: bold;
+    padding: 1.5vh;
+    margin: 1.5vh;
+    border-radius: 20vh;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  a:hover {
+    background-color: white;
+    color: ${({ btn }) => btn};
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
 
   @media (max-width: 700px) {
     width: 100%;
+    a{
+      padding: 1.5vh;
+      margin: 1.5vh;
+      width: 12vh;
+    }
   }
 `;
 
 const ContentArea = styled.div<{ bg: string }>`
-  width: 100%;
+  max-width: 100%;
   flex: 1;
   background-color: ${({ bg }) => bg};
   padding: 2rem;
-
-  @media (max-width: 700px) {
-    width: 100%;
-  }
 `;
 
-export default function Main({ navbg, contentbg, children }: {
+export default function Main({ navbtn, navbg, contentbg, children }: {
+  navbtn: string;
   navbg: string;
   contentbg: string;
   children: ReactNode;
 }) {
   return (
     <MainWrapper>
-      <Sidebar bg={navbg}>
+      <Sidebar btn={navbtn} bg={navbg}>
         <Nav />
       </Sidebar>
       <ContentArea bg={contentbg}>{children}</ContentArea>

@@ -33,18 +33,28 @@ export default function Education() {
   return (
     <>
       <Header bg={dark} />
-      <Main navbg={medium} contentbg={light}>
+      <Main navbtn={dark} navbg={medium} contentbg={light}>
         <h2> Education </h2>
-        <h4> <i>Boston University, Boston, MA</i> [Expected Graduation: <b>May 2025</b>]</h4>
 
+        <h4> <i>King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia</i> [Expected Graduation: 2027]</h4>
         <ul>
-          <li> GPA: 3.61</li>
-          <li> Minoring in English</li>
+          <li>Master of Science in Computer Science</li>
         </ul>
 
-        <p>I'm a senior Computer Science student at Boston University.
-          I'm highly interested in embedded systems and systems design in general.
-          I'm pursuing a minor in English for my love of English Literature. </p>
+        <h4> <i>Boston University, Boston, MA</i> [May 2025]</h4>
+
+        <ul>
+          <li>Bachelor of Arts in Computer Science</li>
+          <li> GPA: 3.61</li>
+          <li> Minor in English</li>
+        </ul>
+
+        <p>
+          I'm currently a Master’s student in Computer Science at KAUST.
+          I previously completed my undergraduate degree at Boston University,
+          where I majored in Computer Science and minored in English Literature.
+          I’m passionate about embedded systems and systems design.
+        </p>
 
         <h2> Important CS classes </h2>
         <Table>
@@ -119,6 +129,25 @@ export default function Education() {
             <td><a href="https://www.bu.edu/academics/cas/courses/cas-cs-440/"> BU CAS CS440
             </a></td>
           </tr>
+          <tr>
+            <td>CS412</td>
+            <td>Full-Stack Application Design and Development</td>
+            <td><a href="https://www.bu.edu/academics/cas/courses/cas-cs-412/"> BU CAS CS412
+            </a></td>
+          </tr>
+          <tr>
+            <td>CS460</td>
+            <td>Introduction to Database Systems</td>
+            <td><a href="https://www.bu.edu/academics/cas/courses/cas-cs-460/"> BU CAS CS460
+            </a></td>
+          </tr>
+          <tr>
+            <td>CS454</td>
+            <td>Embedded Systems Development</td>
+            <td><a href="https://www.bu.edu/academics/cas/courses/cas-cs-454/"> BU CAS CS454
+            </a></td>
+          </tr>
+
         </Table>
 
       </Main>

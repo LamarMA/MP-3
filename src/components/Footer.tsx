@@ -21,8 +21,7 @@ export default function Footer({ bg }: { bg: string }) {
   return (
     <FooterWrapper bg={bg}>
       <p>
-        All rights reserved by Lamar AlSubhi{' '}
-        <a href="/credits">&#169;</a>.
+        All rights reserved by Lamar AlSubhi &#169;.
       </p>
     </FooterWrapper>
   );

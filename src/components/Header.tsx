@@ -2,14 +2,15 @@
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header <{ bg: string }>`
-  padding: 2vw 4vw;
   text-align: left;
   color: #fff;
   background-color: ${({ bg }) => bg};
-  max-width: 100%;
 
-  p {
-    margin-top: 1vw;
+  padding: 1.5rem;
+
+  h1, p{
+    margin: 0;
+    padding:0;
   }
 
   a {

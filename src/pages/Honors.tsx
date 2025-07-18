@@ -18,7 +18,7 @@ export default function Honors() {
   return (
     <>
       <Header bg={dark} />
-      <Main navbg={medium} contentbg={light}>
+      <Main navbtn={dark} navbg={medium} contentbg={light}>
         <h2> Awards & Honors  </h2>
         <h3> Qimam Fellow </h3>
         <h4><i> Qimam Fellowship, McKinsey & Company</i> [<b>May 2023 - Present</b>]</h4>

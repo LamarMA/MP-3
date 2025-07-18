@@ -17,7 +17,7 @@ export default function Skills() {
   return (
     <>
       <Header bg={dark} />
-      <Main navbg={medium} contentbg={light}>
+      <Main navbtn={dark} navbg={medium} contentbg={light}>
         <h2> Skills </h2>
 
         <h3> Languages </h3>
@@ -31,12 +31,14 @@ export default function Skills() {
           <li>OCaml</li>
           <li>SQL</li>
           <li>Go</li>
+          <li>C</li>
+          
         </ol>
 
         <h2> Extracurricular Activities</h2>
 
         <h3> Vice-President</h3>
-        <h4><i> Saudi Cultural Club at Boston University</i> [<b>May 2024 - Present</b>]</h4>
+        <h4><i> Saudi Cultural Club at Boston University</i> [<b>May 2024 - May 2025</b>]</h4>
         <p> Coordinated and facilitated events such as the Saudi National Day and Founding Day.
 
         </p>

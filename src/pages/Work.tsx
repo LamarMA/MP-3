@@ -18,7 +18,7 @@ export default function Work() {
   return (
     <>
       <Header bg={dark} />
-      <Main navbg={medium} contentbg={light}>
+      <Main navbtn={dark} navbg={medium} contentbg={light}>
         <h2> Work & Research </h2>
         <h3> Teaching Assistant (TA) </h3>
         <h4><i> Boston University, Computer Science Department</i> [<b>January 2023 -
